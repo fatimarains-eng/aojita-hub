@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>種類別飼育ガイド | AOJITA</title>
+<meta name="description" content="アオジタトカゲ（Tiliqua属）の種類別飼育ガイド。温度・湿度・UVB・床材・餌を種類ごとにまとめた完全版。">
+<style>
+:root{
+  --bg:#0B0E11; --panel:#11161C; --line:#223039;
+  --text:#EAF2F5; --muted:#9DB2BE; --teal:#2DD4BF; --cyan:#22D3EE;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);
+  font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Yu Gothic UI",sans-serif;
+  line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+.serif{font-family:"Hiragino Mincho ProN","Hiragino Mincho Pro","Yu Mincho","Noto Serif JP",serif}
+.site-header{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;
+  padding:14px 22px;background:rgba(11,14,17,.92);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line)}
+.site-header .brand{font-size:1.25rem;letter-spacing:.28em;color:var(--text)}
+.site-header .brand:hover{text-decoration:none;color:var(--teal)}
+.site-header .back{font-size:.85rem;color:var(--muted)}
+.site-header .back:hover{color:var(--cyan);text-decoration:none}
+.wrap{max-width:840px;margin:0 auto;padding:36px 20px 10px}
+article h1{font-size:clamp(1.7rem,6vw,2.3rem);line-height:1.4;letter-spacing:.04em;margin-bottom:.7em}
+article h2{font-size:clamp(1.3rem,4.6vw,1.55rem);line-height:1.5;margin:2.4em 0 .9em;
+  padding-left:14px;border-left:4px solid var(--teal)}
+article h3{font-size:clamp(1.08rem,4vw,1.22rem);color:var(--teal);margin:2em 0 .7em;line-height:1.5}
+article p{margin:0 0 1.1em}
+article ul,article ol{margin:0 0 1.2em;padding-left:1.5em}
+article li{margin:.4em 0}
+article li>ul{margin:.3em 0 .3em}
+article strong{color:#fff}
+article blockquote{background:var(--panel);border-left:3px solid var(--cyan);
+  padding:16px 20px;margin:1.4em 0;border-radius:0 10px 10px 0}
+article blockquote p{margin:.35em 0}
+article hr{border:none;border-top:1px solid var(--line);margin:2.6em 0}
+article img{display:block;max-width:100%;height:auto;border-radius:10px;margin:.8em 0 1.2em}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.2em 0 1.8em}
+article table{border-collapse:collapse;width:100%;min-width:600px;font-size:.92rem;line-height:1.6}
+article th,article td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+article th{background:#16202A;color:var(--teal);white-space:nowrap}
+article td{background:#0E1319}
+footer{border-top:1px solid var(--line);margin-top:56px;padding:34px 20px 44px;text-align:center}
+footer .to-top{display:inline-block;margin-bottom:14px;padding:11px 26px;border:1px solid var(--teal);
+  border-radius:999px;color:var(--teal);font-size:.9rem;letter-spacing:.06em}
+footer .to-top:hover{background:rgba(45,212,191,.1);text-decoration:none}
+footer p{color:var(--muted);font-size:.8rem;letter-spacing:.14em}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand serif" href="index.html">AOJITA</a>
+  <a class="back" href="index.html">&larr; トップへ戻る</a>
+</header>
+<div class="wrap">
+<article>
+<h1>アオジタトカゲ 種類別飼育ガイド</h1>
+<p>アオジタトカゲ（Tiliqua属）の飼育方法を、種類ごとにまとめたガイドです。
+数値はすべてセンチ・℃表記。海外ケアシートと国内情報を突き合わせ、情報が割れる項目は幅で書いています。</p>
+<blockquote>
+<p><strong>大前提</strong></p>
+<ul>
+<li>全種とも昼行性・地表性で、<strong>単独飼育が原則</strong>。同居はケンカ・咬み傷・指や尾の欠損につながるので不可。</li>
+<li>寿命は15〜20年（35年超の記録も）。お迎えは長期戦。</li>
+<li>ケージや温度の基準は「昔の国内ガイド（小さめ・低め）」と「今の海外基準（大きめ）」で世代差があります。このガイドは新しい海外基準を主にしてあります。</li>
+</ul>
+</blockquote>
+<hr />
+<h2>図説1：ケージの中に「温度の勾配」を作る</h2>
+<p><img alt="ケージの温度勾配" src="img/cage.webp" /></p>
+<p>左がバスキングライトで温める「ホットスポット」、右がシェルターと水入れのある「クールスポット」。
+アオジタは自分で移動して体温を調整するので、ケージ全体を均一に温めるのではなく、<strong>温かい場所と涼しい場所の両方</strong>を用意するのが基本です。隠れ家は温側・冷側に1つずつ、冷側には湿度の高いウェットシェルターを置きます。</p>
+<h2>図説2：種類で一番違うのは「湿度」</h2>
+<p><img alt="乾燥系と多湿系" src="img/habitat.webp" /></p>
+<p>左はオーストラリアの乾燥地帯の種類（絵はチュウオウ：太短い体に大きな頭、赤砂とスピニフェクス）、右はインドネシアの熱帯林の種類（絵はメラウケ：細長い体に長い尾、腹はサーモンオレンジ）。
+同じアオジタでも体型からして全然違うし、必要な湿度は真逆に近いくらい違います。<strong>「アオジタ＝湿度40〜60%」という汎用の数字を全種に当てはめるのが一番の失敗のもと</strong>です。</p>
+<p>湿度の3グループ：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>グループ</th>
+<th>種類</th>
+<th>湿度の目安</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乾燥系</td>
+<td>ニシ／チュウオウ</td>
+<td>20〜40%</td>
+</tr>
+<tr>
+<td>中間</td>
+<td>キタ／ヒガシ</td>
+<td>40〜60%</td>
+</tr>
+<tr>
+<td>中間（冷涼）</td>
+<td>マダラ</td>
+<td>40〜50%</td>
+</tr>
+<tr>
+<td>多湿系</td>
+<td>ハルマヘラ／メラウケ／イリアンジャヤ／ケイ</td>
+<td>60〜80%（ハルマヘラは平均70〜80%＋夜間の上昇）</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>種類別 早見表</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>種類</th>
+<th>成体の全長</th>
+<th>ケージ（単独・推奨）</th>
+<th>バスキング表面</th>
+<th>湿度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>キタ</td>
+<td>45〜60cm</td>
+<td>150×75×60cm級</td>
+<td>40〜46℃</td>
+<td>40〜60%</td>
+</tr>
+<tr>
+<td>ヒガシ</td>
+<td>40〜55cm</td>
+<td>150〜180cm幅</td>
+<td>40〜46℃</td>
+<td>40〜60%</td>
+</tr>
+<tr>
+<td>ニシ</td>
+<td>40〜50cm</td>
+<td>120×60cm以上</td>
+<td>35〜40℃</td>
+<td>20〜40%</td>
+</tr>
+<tr>
+<td>マダラ</td>
+<td>35〜50cm</td>
+<td>120×60×60cm以上</td>
+<td>37〜40℃（低めに組む）</td>
+<td>40〜50%</td>
+</tr>
+<tr>
+<td>チュウオウ</td>
+<td>38〜46cm</td>
+<td>120×60cm以上</td>
+<td>35〜40℃</td>
+<td>20〜40%</td>
+</tr>
+<tr>
+<td>ハルマヘラ</td>
+<td>50〜60cm</td>
+<td>150〜180×60×60cm</td>
+<td>38〜41℃</td>
+<td>70〜80%＋夜間上昇</td>
+</tr>
+<tr>
+<td>メラウケ</td>
+<td>60〜70cm</td>
+<td>150×60cm以上</td>
+<td>38〜40℃</td>
+<td>60〜80%</td>
+</tr>
+<tr>
+<td>イリアンジャヤ</td>
+<td>46〜61cm</td>
+<td>150〜180×61×61cm</td>
+<td>38〜41℃</td>
+<td>60〜80%</td>
+</tr>
+<tr>
+<td>ケイ</td>
+<td>40〜51cm</td>
+<td>150×60cm級</td>
+<td>38〜40℃</td>
+<td>60〜80%</td>
+</tr>
+<tr>
+<td>ピグミー</td>
+<td>15〜20cm</td>
+<td>―（ペット飼育不可）</td>
+<td>―</td>
+<td>―</td>
+</tr>
+</tbody>
+</table></div>
+<p>※ケージの最小ラインは全種共通で「幅120×奥行60cm」が現在の海外基準。高さより床面積が大事。</p>
+<hr />
+<h2>共通の基本</h2>
+<h3>温度</h3>
+<ul>
+<li>バスキングスポットの「表面温度」を放射温度計で測るのが基本（気温ではない）。</li>
+<li>低温部は21〜29℃、夜間は18〜24℃が共通の目安（種類ごとの差は各節参照）。</li>
+<li>温側・冷側の両方に隠れ家を置き、本人が選べるようにする。</li>
+</ul>
+<h3>UVB・ライト</h3>
+<ul>
+<li>全種でUVBは必須（または強く推奨）。T5 HO直管（ReptiSun 10.0／Arcadia 12%など）をケージ長の約半分に設置し、バスキング位置でUVI 3.0〜4.0が目標。</li>
+<li>点灯は1日10〜12時間。管は約12か月で交換（光っていてもUVBは減衰する）。</li>
+<li>ライトの点灯時間は季節で調整すると自然に近い（夏は長く、冬は短く）。</li>
+</ul>
+<h3>床材</h3>
+<ul>
+<li>全種共通で「潜れる深さ10〜15cm」が基本。</li>
+<li>向くもの：土砂ミックス（無添加の表土＋プレイサンド）、サイプレスマルチ、ヤシガラ（多湿系）。</li>
+<li>不向きなもの：パイン／シーダー（芳香性の針葉樹）、カルシウムサンド。</li>
+<li>種類ごとの向き不向きは各節に記載。</li>
+</ul>
+<h3>餌の考え方（属共通）</h3>
+<ul>
+<li>雑食。幼体（〜12か月）は動物性70〜80%、成体は動物性40〜60%・植物性40〜50%・果物10%以下が目安。</li>
+<li>頻度：幼体は毎日、若齢（3〜8か月）は週3回、成体は週1〜2回。</li>
+<li>カルシウムは毎回〜大半の給餌でダスティング、マルチビタミンは週1回〜月1〜2回（UVB環境と製品表示による）。</li>
+<li><strong>肥満が全種共通で最大の飼育下リスク。</strong> 成体は週1〜2回で十分な個体も多い。</li>
+<li>NG食材：アボカド、ネギ類、ルバーブ。</li>
+</ul>
+<h3>健康チェック（飼い主の目安）</h3>
+<ul>
+<li>健康は「うんち」と「肌のはり・つや」で見る。</li>
+<li>口を開けて舌を出していたら脱水の可能性。</li>
+<li>普段の元気な姿を覚えておくと、元気がなくなった時にすぐ気付ける。</li>
+</ul>
+<hr />
+<h2>1. キタアオジタトカゲ <em>Tiliqua scincoides intermedia</em></h2>
+<ul>
+<li><strong>分布</strong>：オーストラリア北部（クイーンズランド州北部、ノーザンテリトリー、西オーストラリア州北部）。熱帯サバンナ、疎林、草原。</li>
+<li><strong>全長</strong>：45〜61cm。アオジタ最大級の亜種。</li>
+<li><strong>ケージ</strong>：最小120×60×60cm、推奨150×75×60〜180×60×60cm（床面積1.1㎡以上）。</li>
+<li><strong>温度</strong>：バスキング表面40〜46℃（資料により35〜46℃）／低温部21〜27℃／夜間18〜24℃。</li>
+<li><strong>湿度</strong>：40〜60%。ウェットシェルターで局所的に60〜70%の場所を作る。</li>
+<li><strong>UVB</strong>：必須。バスキング位置でUVI 3.0〜4.0。</li>
+<li><strong>床材</strong>：土砂ミックス、サイプレスマルチ、ヤシガラなど、深さ10〜15cm。</li>
+<li><strong>餌</strong>：属共通（幼体は動物性70〜80%、成体は動物性50〜60%）。</li>
+<li><strong>注意点</strong>：目の後ろの黒帯が薄い／ないのがヒガシとの見分けポイント。肥満と指先の脱皮不全に注意。掘る力が強いので蓋のロック必須。</li>
+<li><strong>性格</strong>：穏やかで好奇心旺盛。初心者向けの代表格で、CB個体はハンドリングにもよく慣れる。</li>
+</ul>
+<h2>2. ヒガシアオジタトカゲ <em>Tiliqua scincoides scincoides</em></h2>
+<ul>
+<li><strong>分布</strong>：オーストラリア東部〜南東部。温帯草原、硬葉樹林、海岸のヒース、郊外の庭にも出る。</li>
+<li><strong>全長</strong>：40〜55cm（最大61cmの記録あり）。キタよりやや小型・細身。</li>
+<li><strong>ケージ</strong>：最小120×60×60cm、推奨150〜180cm幅。</li>
+<li><strong>温度</strong>：バスキング40〜46℃／低温部21〜29℃／夜間18〜24℃。</li>
+<li><strong>湿度</strong>：40〜60%。</li>
+<li><strong>UVB</strong>：必須（UVI 3.0〜4.0）。</li>
+<li><strong>床材</strong>：土系10〜15cm、ヤシガラ、サイプレス。</li>
+<li><strong>餌</strong>：キタとほぼ共通。</li>
+<li><strong>注意点</strong>：目の後ろの<strong>太い黒帯</strong>が識別点（北東部の個体では不明瞭なことも）。キタとの交雑個体が出回ることがあるので、購入時は亜種の確認を。南部の個体群は冬にブルメーション（冬眠のように不活発になる期間）に入る。</li>
+<li><strong>性格</strong>：穏やかで人懐っこい。キタよりやや活発とも言われる。</li>
+</ul>
+<h2>3. ニシアオジタトカゲ <em>Tiliqua occipitalis</em></h2>
+<ul>
+<li><strong>分布</strong>：主に西オーストラリア州。草原、砂丘、低木地、スピニフェクスの林地。落ち葉や岩の下、ウサギの廃巣穴を隠れ家にする。</li>
+<li><strong>全長</strong>：40〜50cm（通常45cm前後）。</li>
+<li><strong>ケージ</strong>：最小120×60cm（床面）、推奨122×61×61cm以上。※国内の古いガイドの「60cmクラス」は旧来の最低表記で、今の海外基準よりかなり小さい。</li>
+<li><strong>温度</strong>：バスキング表面35〜40℃（出典により32〜41℃）／低温部21〜29℃／夜間18〜24℃。極端な低温には弱く、冬は底面保温を勧める国内情報もあり。</li>
+<li><strong>湿度</strong>：<strong>20〜40%</strong>。属の中でも最も乾燥寄り。常時高湿は不向きで、脱皮用に少し湿らせたシェルターを1か所用意する型が推奨。</li>
+<li><strong>UVB</strong>：必須扱い（UVI 3.0〜4.0）。</li>
+<li><strong>床材</strong>：潜れる緩い床材を10〜15cm。無添加表土60%＋プレイサンド40%の配合、乾燥系ミックス、バークチップなど。シダー・パインは全資料で回避。</li>
+<li><strong>餌</strong>：野生では昆虫・クモ・カタツムリ、ベリー類、死肉など。強い顎でカタツムリの殻を砕く。比率は属共通の成体目安（動物性50〜60%／植物性40〜50%）。</li>
+<li><strong>注意点</strong>：乾燥地帯の種。<strong>インドネシア系のような高湿運用を当てはめないこと。</strong> 流通は極めて稀で高価（オーストラリアは野生動物の輸出禁止のため、過去に欧米へ出た個体のCBのみ）。地域によっては保全対象。</li>
+<li><strong>性格</strong>：温和で臆病、慣れやすい。キタより臆病で、隠れ家と深い床材が必要。威嚇は口を開けて青い舌を見せ、体を平らにして大きく見せる「ハッタリ型」。</li>
+</ul>
+<h2>4. マダラアオジタトカゲ <em>Tiliqua nigrolutea</em></h2>
+<p>黒い体に黄色〜オレンジの斑が入る種類。タスマニアにも分布する、冷涼な気候の出身。</p>
+<ul>
+<li><strong>分布</strong>：オーストラリア南東部とタスマニア。湿性・乾性硬葉樹林、山地林、海岸ヒース、草原。夜は落ち葉・岩・倒木の下。</li>
+<li><strong>全長</strong>：35〜50cm。体重1kgを超える個体もいる。</li>
+<li><strong>ケージ</strong>：最小122×61×61cm、推奨120×60×60cm以上。高さより床面積。</li>
+<li><strong>温度</strong>：<strong>他のアオジタより低めに組むのが要点。</strong> バスキング表面37〜40℃が属共通基準だが、マダラ専用資料ではホット側26〜28℃・クールエンド24℃と低めに出るものも。夜間18〜24℃で、通常の室温なら夜間加温が不要なことも多い。低温には非常に強い（短時間なら0℃近くに耐えた例も。ただし飼育で再現する値ではない）。</li>
+<li><strong>湿度</strong>：40〜50%。</li>
+<li><strong>UVB</strong>：必要（UVI 3.0〜4.0）。</li>
+<li><strong>床材</strong>：表土＋プレイサンド混合、サイプレスマルチ、落ち葉、バークを10〜15cm。砂単体は目に入って感染症の恐れがあるので避ける。</li>
+<li><strong>餌</strong>：野生ではカタツムリ、甲虫などの遅い無脊椎動物、植物、花、果実。成体は動物性40〜60%／植物性40〜50%が目安。</li>
+<li><strong>注意点</strong>：<strong>冷涼気候型で、日本の夏の高温・高湿のほうがリスク。</strong> 他種より涼しい部屋管理が必要。高地型（大型で黒く、桃〜オレンジの斑が鮮やか）と低地型（小型で色が淡い）の2型がある。冬はブルメーションに入り早春に活動再開。カタツムリ駆除剤を食べたカタツムリ経由の中毒に注意。</li>
+<li><strong>性格</strong>：穏やかで動きが遅く、ハンドリング耐性は高い。脅威を感じると口を大きく開けて青い舌を見せ、シューッと鳴らして体を平たくする。</li>
+</ul>
+<h2>5. チュウオウアオジタトカゲ <em>Tiliqua multifasciata</em>（ホソオビアオジタトカゲ）</h2>
+<ul>
+<li><strong>分布</strong>：オーストラリア中央部〜西部。赤砂の平原・砂丘・石の多い丘陵＋スピニフェクス植生。真の砂漠性種。</li>
+<li><strong>全長</strong>：38〜46cm。属内で最も太短く頭が大きく、「ツチノコ型」と紹介される体型。</li>
+<li><strong>ケージ</strong>：種固有の基準は未確認のため属共通を適用。最小120×60cm、推奨122×61×61cm。</li>
+<li><strong>温度</strong>：種固有の数値表は未確認。乾燥系の共通値ではバスキング35〜40℃／低温部21〜29℃／夜間18〜24℃。</li>
+<li><strong>湿度</strong>：20〜40%（ニシと並ぶ最低湿度群）。脱皮用に局所的な高湿シェルターを用意。</li>
+<li><strong>UVB</strong>：必要（条件はニシと共通）。</li>
+<li><strong>床材</strong>：乾燥系ミックス（表土60%＋プレイサンド40%）、赤砂＋土混合、バークチップを10〜15cm。常時湿った床材は過湿になりやすい。</li>
+<li><strong>餌</strong>：肉食性が強い機会的雑食。種特有の比率は未確認で、属共通の成体目安から動物性寄りに寄せると紹介されることが多い。</li>
+<li><strong>注意点</strong>：<strong>高湿度・蒸れが最大の失敗要因。</strong> 暑い時期は夜行性が強くなり、真夏に昼間の活動が鈍っても即異常とは限らない。流通は極めて稀で、日本国内の流通はほぼ皆無。</li>
+<li><strong>性格</strong>：データは少ないが、一般に臆病な砂漠種。導入初期は触らず落ち着かせる期間を取る。</li>
+</ul>
+<h2>6. オオアオジタトカゲ類 <em>Tiliqua gigas</em>（インドネシア系）</h2>
+<p>インドネシア〜ニューギニア産のグループ。共通するのは<strong>多湿が必須</strong>なことと、流通個体の大半が野生採集（WC）で、<strong>お迎え＝検疫の開始</strong>になることです。糞便検査、脱水の補正、他の個体との隔離が前提になります。</p>
+<p>分類の整理：<em>T. gigas</em> には3亜種（基亜種 <em>gigas</em>、メラウケ <em>evanescens</em>、ケイ <em>keyensis</em>）。「ハルマヘラ」は独立した亜種ではなく、基亜種のハルマヘラ島ロカリティ／流通名です。「イリアンジャヤ」は未記載の <em>Tiliqua</em> sp. として扱うのが現在の主流です。</p>
+<h3>6-1. ハルマヘラ（<em>T. g. gigas</em> ハルマヘラ島ロカリティ）</h3>
+<ul>
+<li><strong>分布</strong>：インドネシア・ハルマヘラ島（基亜種はマルク諸島〜ニューギニア島北部沿岸まで）。赤道直下の低地熱帯雨林の林床。</li>
+<li><strong>全長</strong>：50〜60cmを想定（45〜66cmの幅あり）。</li>
+<li><strong>ケージ</strong>：最小120×60×60cm、推奨150〜180×60×60cm。前面開閉式・PVC製は保湿に有利。</li>
+<li><strong>温度</strong>：バスキング表面38〜41℃／低温部24〜29℃／夜間21〜25℃。</li>
+<li><strong>湿度</strong>：<strong>アオジタの中で最も高湿度を要求する群。</strong> 平均70〜80%を下回らず、霧吹き後や夜間に80〜100%まで上がる時間帯を毎日作る。60%未満が続くと脱皮不全がほぼ必発。測る場所は低温側の地表近く。ただし常時びしょ濡れ＋無換気は鱗腐れ・呼吸器疾患のもと。換気は確保する。</li>
+<li><strong>UVB</strong>：必須。バスキング位置でUVI 3〜4。</li>
+<li><strong>床材</strong>：サイプレスマルチ、ヤシガラ、ココファイバー、表土ミックスを10〜15cm。国内情報でもヤシガラが第一推奨。アスペンは多湿でカビるので不向き。</li>
+<li><strong>餌</strong>：昆虫、卵、加熱した赤身肉・鶏肉、質の良いドッグフード少量＋葉野菜と野菜。成体は動物性40〜50%・野菜40〜50%・果物10%以下が落としどころ。</li>
+<li><strong>注意点</strong>：流通の大半がWC。輸入直後は脱水、内部寄生虫、ダニ、口内炎のチェックと糞便検査が必須。乾燥に最も弱く、指先・尾先の脱皮残り→指落ち、眼の感染が典型的な失敗パターン。腹部の黒白／黒ピンクのまだら模様がメラウケとの識別点。</li>
+<li><strong>性格</strong>：インドネシア系の中では神経質な方。WC個体は威嚇・咬むことも。入荷後最低2週間は触らず静置し、短いハンドリングから慣らす。</li>
+</ul>
+<h3>6-2. メラウケ <em>Tiliqua gigas evanescens</em></h3>
+<ul>
+<li><strong>分布</strong>：ニューギニア島南部低地（メラウケ周辺〜パプアニューギニア南部）。サバナ草原、季節性氾濫原、開けた林と熱帯林の移行帯。</li>
+<li><strong>全長</strong>：<strong>アオジタ属で最長</strong>。60〜70cmが飼育下の通常想定（尾が胴の80〜90%と極端に長い）。</li>
+<li><strong>ケージ</strong>：最小120×60×60cmは下限。推奨150×60cm以上、できれば183×61×61cm。長い尾の取り回しに床面積が要る。</li>
+<li><strong>温度</strong>：バスキング表面38〜40℃／低温部24〜29℃／夜間21〜24℃を下回らない。</li>
+<li><strong>湿度</strong>：60〜80%で全資料一致。ハルマヘラほど常時80%超は要らないが、40〜50%台の乾燥飼育は脱皮不全・呼吸器トラブルの原因。</li>
+<li><strong>UVB／床材／餌</strong>：ハルマヘラと共通。ただし成体は大型化するため、高脂肪の餌（ドッグフード、卵、マウス等）の頻度を上げると脂肪肝を伴う肥満になりやすい。成体は週1〜2回を基本に体型で調整。</li>
+<li><strong>注意点</strong>：インドネシア系ではCB個体が比較的流通するがWCも多い。識別点は、腹がサーモンオレンジで斑が少ない、四肢に細かい斑、体側バンドが細く明瞭、尾が最長。</li>
+<li><strong>性格</strong>：<strong>インドネシア系で最も穏やか</strong>とほぼ全資料が一致。CB個体はハンドリングに慣れやすく、インドネシア系の入門として選ばれることが多い。</li>
+</ul>
+<h3>6-3. イリアンジャヤ <em>Tiliqua</em> sp.（未記載種）</h3>
+<ul>
+<li><strong>分類上の扱い（重要）</strong>：メラウケの学名（<em>evanescens</em>）に暫定的に置かれた経緯はありますが、現在の主要資料はそろって <strong>未記載の <em>Tiliqua</em> sp.</strong> としています。<strong>メラウケと同種・同亜種として扱わないこと。</strong>「イリアンジャヤ」は産地名であり学名ではありません。繁殖ではロカリティを混ぜない。</li>
+<li><strong>分布</strong>：ニューギニア島南部〜西部沿岸の低地。飼育上は多湿系として扱う。</li>
+<li><strong>全長</strong>：46〜61cm。</li>
+<li><strong>ケージ</strong>：最小120×60×60cm、推奨150〜180×61×61cm。</li>
+<li><strong>温度</strong>：バスキング表面38〜41℃（資料により33〜41℃と幅）／低温部21〜27℃／夜間21〜24℃。</li>
+<li><strong>湿度</strong>：60〜80%で全資料一致。朝夕2回の霧吹き、低温側の地表で測定。</li>
+<li><strong>UVB</strong>：強く推奨（UVI 3.0〜4.0）。</li>
+<li><strong>床材</strong>：有機質に富む土壌＋落ち葉を10〜15cm。表土＋ソイル＋プレイサンドの混合に落ち葉・水苔の被覆など。</li>
+<li><strong>餌</strong>：<em>gigas</em> と同一基準（幼体は動物性70〜80%、成体は動物性50〜60%目安）。国内情報の「野菜：動物性＝7:3」は植物寄り配合の一例で、幅として動物性30〜60%／植物性40〜70%と理解する。</li>
+<li><strong>注意点</strong>：<strong>ほぼ常にWC。</strong> 寄生虫・脱水・マダニのチェック必須。同定が最も難しい群で、「他のどのタイプにも当てはまらなければイリアンジャヤ」という消去法同定がされるほど個体変異が大きく、販売ラベルの違いも非常に多い。</li>
+<li><strong>性格</strong>：WCが大半にもかかわらず「概して穏やかで好奇心旺盛」という評価。手から餌を食べるようになる個体も多い。</li>
+</ul>
+<h3>6-4. ケイアオジタトカゲ <em>Tiliqua gigas keyensis</em></h3>
+<p>※学名の綴りは <em>keyensis</em> が正式。販売サイトで <em>keiensis</em> や <em>evanescens</em> と書かれる例がありますが誤りです。</p>
+<ul>
+<li><strong>分布</strong>：インドネシア・ケイ諸島（ケイ・クチル島、ケイ・ブサール島）。低地熱帯林、プランテーション、林縁の集落周辺。倒木や落ち葉の下に潜む。</li>
+<li><strong>全長</strong>：40〜51cm。<em>gigas</em> の中では小型の亜種（51cmを超える記録は未確認として扱う）。</li>
+<li><strong>ケージ</strong>：ケイ専用の規格は未確認のため <em>gigas</em> 共通基準を適用。最小120×60×45〜60cm、推奨150〜180×61×61cm。小型だから90cmケージでよいという根拠は確認できなかった。</li>
+<li><strong>温度</strong>：ケイ固有の実測値は未確認。<em>gigas</em> 共通値でバスキング表面38〜40℃／低温部24〜29℃／夜間21〜24℃。</li>
+<li><strong>湿度</strong>：60〜80%（夜間に80〜100%へ上がる時間帯は通常）。</li>
+<li><strong>UVB／床材／餌</strong>：<em>gigas</em> 共通（UVI 3〜4、潜れる床材10〜15cm、成体は動物性40〜50%・野菜40〜50%・果物10%以下）。</li>
+<li><strong>注意点</strong>：<strong>インドネシア系で最も流通量が少なく、情報も最も乏しい亜種。</strong> 大半がWC。金オリーブ〜オレンジ赤の地色に淡いバンド、全身（顔面まで）に細かい斑点／そばかす模様が特徴で、生後3〜6か月で斑点が出揃う。基亜種と混同されやすい。島嶼固有亜種のため生息地の攪乱に弱い。</li>
+<li><strong>性格</strong>：インドネシア系の中で攻撃性が高い方と複数の資料が一致（ただし「WC個体が多いことが原因の可能性」も併記されている）。ハンドリングは短時間・低頻度から。咬む力はアオジタ共通で強い。</li>
+</ul>
+<hr />
+<h2>7. ピグミーアオジタトカゲ <em>Tiliqua adelaidensis</em>（飼えない種類）</h2>
+<p>参考として載せますが、<strong>この種類はペットとして飼うことができません。</strong></p>
+<ul>
+<li>オーストラリアではペットとしての保有・売買自体が認められておらず、飼育下個体は保全繁殖施設など研究・保全目的に限られます。合法的な商業流通はゼロで、海外市場に出る個体は密輸由来とみなされています。</li>
+<li>南オーストラリア州の温帯草原だけに分布する、アオジタ属最小の種（全長15〜20cmほど）。絶滅危惧種（IUCN：Endangered）で、野生個体数は約5,000頭と推定。</li>
+<li>1959年以降記録がなく絶滅したと考えられていましたが、1992年にヘビの胃の内容物から再発見されたという経緯があります。</li>
+<li>自分で穴を掘らず、クモが掘った放棄巣穴（ほぼ垂直・深さ約24cm）を住居にします。名前と違い、<strong>舌は青くなくローズピンク色</strong>です。</li>
+</ul>
+<p>「種類ごとに調べる」と必ず出てくる名前なので載せましたが、お迎えの候補には入りません。</p>
+<hr />
+<h2>飼い主の実践メモ（板橋さんの運用）</h2>
+<p>一般論ではなく、実際に飼っている運用の記録です。</p>
+<ul>
+<li><strong>ライト管理</strong>：ライトはSwitchBotで管理し、点灯時間は季節で調整（夏は長く、冬は短く）。</li>
+<li><strong>給餌</strong>：ウェットタイプのドッグフード300gに鶏卵を1個混ぜて与える。卵だけを単体であげることはほぼない。</li>
+<li><strong>湿度スポット</strong>：ペットシーツを少し濡らすと、ジメジメした場所（湿度の高いスポット）を簡単に作れる。全体をジメジメにするのはNGで、「ずっと湿った場所がある場所」と「乾いた場所」の両方があるのが大事。</li>
+<li><strong>インドネシア系の湿度</strong>：運用の指定は70〜90%（主要ケアシートの平均値60〜80%より上限側の運用）。</li>
+<li><strong>お迎えの前に考える順番</strong>：「スペース、生体の値段、ご飯」。まず必要なのはお金。そして「生き物を飼いたいと思ったら、まずその生き物が住んでる地域の温度を調べる」。</li>
+<li><strong>種類選び</strong>：おすすめはケイアオジタ。「イベントで目が合ったら運命かもしれない」。</li>
+</ul>
+<hr />
+<h2>参考ソース</h2>
+<ul>
+<li>ReptiFiles ケアガイド／種別ケアシート（温度・湿度・ライト／餌）</li>
+<li>RSPCA Knowledgebase、Smithsonian's National Zoo、The Bio Dude、Reptile Centre、PetMD、Exotic Pet Vet</li>
+<li>Australian Museum（マダラ）、Museums Victoria（ニシ／マダラ）、Wikipedia（各種）</li>
+<li>IUCN Red List（ピグミー／<em>T. gigas</em>）、CITES CoP19提案書（ピグミー）、DCCEEW（ピグミー）</li>
+<li>BlueTongueSkinks.NET（ケイ）、Exotics Keeper（インドネシア系）、BeWild Reptile Rescue（インドネシア系）</li>
+<li>All About 爬虫類ガイド（ニシ／チュウオウ／キタ・ヒガシ系）、ブリちょく（オオアオジタ／イリアンジャヤ）</li>
+</ul>
+<p>※数値は2026-11-22時点の調査。資料間で数値が割れる項目は幅で記載し、確認できなかった項目は「未確認」と明記してあります。</p>
+</article>
+</div>
+<footer>
+  <a class="to-top" href="index.html">&larr; AOJITA トップへ戻る</a>
+  <p>AOJITA &mdash; アオジタトカゲ飼育の道具と記録</p>
+</footer>
+</body>
+</html>

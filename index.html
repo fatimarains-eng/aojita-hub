@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AOJITA | アオジタトカゲ飼育の道具と記録</title>
+<meta name="description" content="アオジタトカゲの飼育管理アプリ・雌雄判別アプリと、種類別飼育ガイドをまとめたハブページ。">
+<style>
+:root{
+  --bg:#0B0E11; --panel:#11161C; --card:#131A21; --line:#223039;
+  --text:#EAF2F5; --muted:#9DB2BE; --teal:#2DD4BF; --cyan:#22D3EE;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);
+  font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Yu Gothic UI",sans-serif;
+  line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+.serif{font-family:"Hiragino Mincho ProN","Hiragino Mincho Pro","Yu Mincho","Noto Serif JP",serif}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:94vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-overlay{position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(11,14,17,.30) 0%,rgba(11,14,17,.45) 52%,#0B0E11 100%)}
+.hero-inner{position:relative;width:100%;max-width:1040px;margin:0 auto;padding:120px 24px 72px}
+.hero-eyebrow{font-size:.72rem;letter-spacing:.42em;color:var(--teal);margin-bottom:16px}
+.hero h1{font-size:clamp(3.6rem,15vw,8rem);line-height:1;letter-spacing:.1em;font-weight:600}
+.hero-bar{width:72px;height:3px;margin:26px 0 20px;
+  background:linear-gradient(90deg,var(--teal),var(--cyan))}
+.hero-sub{font-size:clamp(1.25rem,5.4vw,2rem);letter-spacing:.46em;line-height:1.5}
+.hero-tag{margin-top:16px;color:#C7D5DD;font-size:.95rem;letter-spacing:.1em}
+
+/* ---------- layout ---------- */
+main{max-width:1040px;margin:0 auto;padding:0 24px}
+section{padding:72px 0 8px}
+.sec-title{font-size:clamp(1.9rem,7vw,2.7rem);letter-spacing:.22em;line-height:1.2;font-weight:600}
+.sec-title span{display:block;font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;
+  font-size:.82rem;letter-spacing:.3em;color:var(--teal);margin-top:10px}
+.sec-lead{color:var(--muted);margin-top:18px;max-width:640px}
+
+/* ---------- app cards ---------- */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:28px 24px;color:var(--text);transition:border-color .2s,transform .2s}
+a.card:hover{border-color:var(--teal);transform:translateY(-3px);text-decoration:none}
+.card-tag{font-size:.7rem;letter-spacing:.3em;color:var(--teal);margin-bottom:12px}
+.card h3{font-size:1.3rem;letter-spacing:.04em;margin-bottom:10px;line-height:1.4}
+.card p{color:var(--muted);font-size:.92rem}
+.card-link{margin-top:18px;color:var(--cyan)!important;font-size:.88rem;letter-spacing:.06em}
+.card-soon{opacity:.75}
+.badge{display:inline-block;margin-top:18px;padding:4px 14px;border:1px solid var(--muted);
+  border-radius:999px;color:var(--muted);font-size:.75rem;letter-spacing:.2em}
+
+/* ---------- basics ---------- */
+.basics-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:36px}
+.basic{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 24px}
+.basic h3{font-size:1.05rem;color:var(--teal);letter-spacing:.1em;margin-bottom:12px}
+.basic ul{padding-left:1.3em;color:var(--muted);font-size:.93rem}
+.basic li{margin:.45em 0}
+.basic strong{color:var(--text)}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:34px 0 8px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:.9rem;line-height:1.6}
+th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;white-space:nowrap}
+th{background:#16202A;color:var(--teal)}
+td{background:#0E1319}
+.table-note{color:var(--muted);font-size:.82rem;margin-top:10px}
+.btn{display:inline-block;margin-top:38px;padding:15px 34px;border-radius:999px;
+  background:linear-gradient(90deg,var(--teal),var(--cyan));color:#06251F;
+  font-weight:700;letter-spacing:.08em;font-size:.95rem}
+.btn:hover{text-decoration:none;opacity:.88}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);margin-top:88px;padding:40px 24px 48px;text-align:center}
+footer .foot-brand{font-size:1.05rem;letter-spacing:.3em;margin-bottom:8px}
+footer p{color:var(--muted);font-size:.8rem;letter-spacing:.14em}
+
+/* ---------- responsive ---------- */
+@media (max-width:760px){
+  .cards{grid-template-columns:1fr}
+  .basics-grid{grid-template-columns:1fr}
+  section{padding:56px 0 4px}
+  .hero-inner{padding-bottom:56px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img class="hero-img" src="img/cover.webp" alt="アオジタトカゲ">
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">BLUE-TONGUED SKINK</p>
+    <h1 class="serif">AOJITA</h1>
+    <div class="hero-bar"></div>
+    <p class="hero-sub">アオジタトカゲ</p>
+    <p class="hero-tag">アオジタトカゲ飼育の道具と記録</p>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== APPS ===== -->
+  <section id="apps">
+    <h2 class="sec-title serif">APPS<span>アプリ</span></h2>
+    <p class="sec-lead">日々の飼育を助けるために作った、自作のWebアプリです。スマホのブラウザでそのまま使えます。</p>
+    <div class="cards">
+      <a class="card" href="https://fatimarains-eng.github.io/aojita-log/" target="_blank" rel="noopener">
+        <p class="card-tag">飼育管理</p>
+        <h3>aojita-log</h3>
+        <p>給餌・脱皮・体重の記録と、モルフ計算ができる飼育管理アプリ。</p>
+        <p class="card-link">アプリを開く &rarr;</p>
+      </a>
+      <a class="card" href="https://fatimarains-eng.github.io/aojita-sexing/" target="_blank" rel="noopener">
+        <p class="card-tag">雌雄判別</p>
+        <h3>aojita-sexing</h3>
+        <p>真上写真にランドマークを打って、形態比率から雌雄を判定するアプリ。</p>
+        <p class="card-link">アプリを開く &rarr;</p>
+      </a>
+      <div class="card card-soon">
+        <p class="card-tag">繁殖</p>
+        <h3>ブリードシミュレーター</h3>
+        <p>親の組み合わせから、生まれてくる子のモルフをシミュレーションするアプリ。</p>
+        <p class="badge">制作中</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CARE BASICS ===== -->
+  <section id="care">
+    <h2 class="sec-title serif">CARE<span>基本の飼い方</span></h2>
+    <p class="sec-lead">全種に共通する基本です。種類ごとの違い（とくに湿度）は下の早見表と完全版ガイドで確認してください。</p>
+
+    <div class="basics-grid">
+      <div class="basic">
+        <h3>温度</h3>
+        <ul>
+          <li>バスキングスポットの「表面温度」を放射温度計で測るのが基本（気温ではない）</li>
+          <li>低温部は21〜29℃、夜間は18〜24℃が共通の目安</li>
+          <li>温側・冷側の両方に隠れ家を置き、本人が選べるようにする</li>
+        </ul>
+      </div>
+      <div class="basic">
+        <h3>UVB・ライト</h3>
+        <ul>
+          <li>全種でUVBは必須（または強く推奨）。T5 HO直管をケージ長の約半分に設置し、バスキング位置でUVI 3.0〜4.0が目標</li>
+          <li>点灯は1日10〜12時間。管は約12か月で交換（光っていてもUVBは減衰する）</li>
+          <li>点灯時間は季節で調整すると自然に近い（夏は長く、冬は短く）</li>
+        </ul>
+      </div>
+      <div class="basic">
+        <h3>床材</h3>
+        <ul>
+          <li>全種共通で「潜れる深さ10〜15cm」が基本</li>
+          <li>向くもの：土砂ミックス（無添加の表土＋プレイサンド）、サイプレスマルチ、ヤシガラ（多湿系）</li>
+          <li>不向きなもの：パイン／シーダー（芳香性の針葉樹）、カルシウムサンド</li>
+        </ul>
+      </div>
+      <div class="basic">
+        <h3>餌の考え方</h3>
+        <ul>
+          <li>雑食。幼体（〜12か月）は動物性70〜80%、成体は動物性40〜60%・植物性40〜50%・果物10%以下が目安</li>
+          <li>頻度：幼体は毎日、若齢（3〜8か月）は週3回、成体は週1〜2回</li>
+          <li><strong>肥満が全種共通で最大の飼育下リスク</strong></li>
+          <li>NG食材：アボカド、ネギ類、ルバーブ</li>
+        </ul>
+      </div>
+      <div class="basic">
+        <h3>健康チェック</h3>
+        <ul>
+          <li>健康は「うんち」と「肌のはり・つや」で見る</li>
+          <li>口を開けて舌を出していたら脱水の可能性</li>
+          <li>普段の元気な姿を覚えておくと、元気がなくなった時にすぐ気付ける</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>種類</th><th>成体の全長</th><th>ケージ（単独・推奨）</th><th>バスキング表面</th><th>湿度</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>キタ</td><td>45〜60cm</td><td>150×75×60cm級</td><td>40〜46℃</td><td>40〜60%</td></tr>
+          <tr><td>ヒガシ</td><td>40〜55cm</td><td>150〜180cm幅</td><td>40〜46℃</td><td>40〜60%</td></tr>
+          <tr><td>ニシ</td><td>40〜50cm</td><td>120×60cm以上</td><td>35〜40℃</td><td>20〜40%</td></tr>
+          <tr><td>マダラ</td><td>35〜50cm</td><td>120×60×60cm以上</td><td>37〜40℃（低めに組む）</td><td>40〜50%</td></tr>
+          <tr><td>チュウオウ</td><td>38〜46cm</td><td>120×60cm以上</td><td>35〜40℃</td><td>20〜40%</td></tr>
+          <tr><td>ハルマヘラ</td><td>50〜60cm</td><td>150〜180×60×60cm</td><td>38〜41℃</td><td>70〜80%＋夜間上昇</td></tr>
+          <tr><td>メラウケ</td><td>60〜70cm</td><td>150×60cm以上</td><td>38〜40℃</td><td>60〜80%</td></tr>
+          <tr><td>イリアンジャヤ</td><td>46〜61cm</td><td>150〜180×61×61cm</td><td>38〜41℃</td><td>60〜80%</td></tr>
+          <tr><td>ケイ</td><td>40〜51cm</td><td>150×60cm級</td><td>38〜40℃</td><td>60〜80%</td></tr>
+          <tr><td>ピグミー</td><td>15〜20cm</td><td>―（ペット飼育不可）</td><td>―</td><td>―</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">※ケージの最小ラインは全種共通で「幅120×奥行60cm」が現在の海外基準。高さより床面積が大事。</p>
+
+    <a class="btn" href="guide.html">種類別ガイド完全版を読む &rarr;</a>
+  </section>
+
+</main>
+
+<footer>
+  <p class="foot-brand serif">AOJITA</p>
+  <p>アオジタトカゲ飼育の道具と記録</p>
+</footer>
+
+</body>
+</html>
